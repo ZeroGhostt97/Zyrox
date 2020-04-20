@@ -17,7 +17,7 @@
 
         <!-- Navbar -->
 
-        <nav id="navbarup">
+        <nav>
             <div class="nav-wrapper red accent-4">
                 <a href="#" class="brand-logo center">Zyrox</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -28,6 +28,10 @@
 
                 <!-- Sidenav -->
                 <ul id="slide-out" class="sidenav">
+                    <li><a class="waves-effect center red">Menu</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
                     <li><a class="waves-effect" href="#series">Series</a></li>
                     <li><a class="waves-effect" href="#peliculas">Peliculas</a></li>
                     <li><a class="waves-effect" href="#musica">Musica</a></li>
@@ -40,6 +44,32 @@
     </header>
 
     <main>
+        <!-- Carousel -->
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="carousel carousel-slider center">
+                    <div class="carousel-fixed-item center">
+                        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                    </div>
+                    <div class="carousel-item red white-text" href="#one!">
+                        <h2>First Panel</h2>
+                        <p class="white-text">This is your first panel</p>
+                    </div>
+                    <div class="carousel-item amber white-text" href="#two!">
+                        <h2>Second Panel</h2>
+                        <p class="white-text">This is your second panel</p>
+                    </div>
+                    <div class="carousel-item green white-text" href="#three!">
+                        <h2>Third Panel</h2>
+                        <p class="white-text">This is your third panel</p>
+                    </div>
+                    <div class="carousel-item blue white-text" href="#four!">
+                        <h2>Fourth Panel</h2>
+                        <p class="white-text">This is your fourth panel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div id="series" class="scrollspy col s12 m12 l12">
@@ -82,8 +112,6 @@
                 <h4 class="center">Peliculas!</h4>
                 <hr>
                 <div class="container">
-
-
                     <table>
                         <thead>
                             <tr>
@@ -97,12 +125,17 @@
                             <tr>
                                 <td>1</td>
                                 <td>Coraline</td>
-                                <td><a class="waves-effect waves-light btn red" href="https://www.zyrox.cl/video/CoralineyLaPruertaSecreta.mkv">LINK</a></td>
+                                <td><a class="waves-effect waves-light btn red" href="">LINK</a>
+                                    <video class="responsive-video" controls>
+                                        <source src="https://www.zyrox.cl/video/Coraline.mkv">
+                                    </video>
+                                </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Ratatuille</td>
-                                <td><a class="waves-effect waves-light btn red" href="https://www.zyrox.cl/video/Ratatuille.mkv">LINK</a></td>
+                                <td><a class="waves-effect waves-light btn red"
+                                        href="https://www.zyrox.cl/video/Ratatuille.mkv">LINK</a></td>
                             </tr>
                         </tbody>
                     </table>
