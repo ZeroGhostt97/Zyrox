@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zyrox</title>
 </head>
 
-<body>
+<body class="deep-orange accent-4" style="background-image: url(image/gplay.png); font-family: 'Montserrat', sans-serif;">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Header -->
     <header id="home" class="scrollspy">
 
         <!-- Navbar -->
         <div class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper red accent-4">
+                <div class="nav-wrapper red accent-4" style="background-image: url(image/diagmonds.png);">
                     <a href="#" class="brand-logo center">Zyrox</a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -56,30 +55,29 @@
             <ul class="slides">
                 <li>
                     <img src="image/1.jpg" class="responsive-img"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <div class="caption left-align black-text">
+                        <h3>Welcome!</h3>
+                        <h5 class="light black-text text-lighten-3">This is my Web Page</h5>
                     </div>
                 </li>
                 <li>
                     <img src="image/2.jpg" class="responsive-img"> <!-- random image -->
-                    <div class="caption left-align">
-                        <h3>Left Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <div class="caption left-align black-text">
+                        <h3>I'm Zero</h3>
                     </div>
                 </li>
                 <li>
-                    <img src="" class="responsive-img"> <!-- random image -->
+                    <img src="image/3.jpg" class="responsive-img"> <!-- random image -->
                     <div class="caption right-align">
-                        <h3>Right Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        <h3></h3>
+                        <h5 class="light grey-text text-lighten-3"></h5>
                     </div>
                 </li>
                 <li>
-                    <img src="" class="responsive-img"> <!-- random image -->
+                    <img src="image/4.jpg" class="responsive-img"> <!-- random image -->
                     <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        <h3></h3>
+                        <h5 class="light grey-text text-lighten-3"></h5>
                     </div>
                 </li>
             </ul>
@@ -132,7 +130,7 @@
             <div id="series" class="scrollspy col s12 m12 l12">
 
                 <!-- Table 1 -->
-                <h4 class="center">Series!</h4>
+                <h4 class="center">Series</h4>
                 <hr>
                 <div class="container">
                     <table class="striped">
@@ -167,7 +165,7 @@
 
             <!-- Table 2 -->
             <div id="peliculas" class="scrollspy col s12 m12 l12">
-                <h4 class="center">Peliculas!</h4>
+                <h4 class="center">Peliculas</h4>
                 <hr>
                 <div class="container">
                     <table class="striped">
@@ -202,7 +200,7 @@
 
             <!-- Table 3 -->
             <div id="musica" class="scrollspy col s12 m12 l12">
-                <h4 class="center">Musica!</h4>
+                <h4 class="center">Musica</h4>
                 <hr>
                 <div class="container">
                     <table class="striped">
@@ -263,7 +261,7 @@
 
     <!-- Footer -->
     <footer>
-        <footer class="page-footer red accent-4">
+        <footer class="page-footer red accent-4" style="background-image: url(image/diagmonds.png);">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
@@ -298,7 +296,10 @@
             var instances = M.Sidenav.init(nabvar, {});
 
             var slider = document.querySelectorAll('.slider');
-            var instances = M.Slider.init(slider, {});
+            var instances = M.Slider.init(slider, {
+                height: 600,
+                indicators: true
+            });
 
             var collapsible = document.querySelectorAll('.collapsible');
             var instances = M.Collapsible.init(collapsible, {});
