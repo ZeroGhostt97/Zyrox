@@ -91,19 +91,8 @@
                             , "70. El verdadero sentimiento de Sakura.mp4"
                         ];
                         for (var i = 0; i < 70; i++) {
-                            document.write(
-                                '                    <li>\
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>'+sccap[i]+'</div>\
-                        <div class="collapsible-body"><span>\
-                                <video class="responsive-video" controls>\
-                                    <source\
-                                        src="video/anime/SakuraCardcaptor/'+sccap[i]+'"\
-                                        type="video/mp4">\
-                                </video>\
-                            </span></div>\
-                    </li>')
-                        }
-
+                            document.write('<li><div class="collapsible-header"><i class="material-icons">whatshot</i>'+sccap[i]+'</div><div class="collapsible-body"><span>\
+                                <video class="responsive-video" controls><source src="video/anime/SakuraCardcaptor/'+sccap[i]+'" type="video/mp4"></video></span></div></li>')}
                     </script>
                 </ul>
             </div>
@@ -116,6 +105,13 @@
             var collapsible = document.querySelectorAll('.collapsible');
             var instances = M.Collapsible.init(collapsible, {});
         });
+
+        /*
+        $this->db->select("p.idProfesor, p.rutProfesor, p.nombresProfesor,p.apellidosProfesor, p.fechaNacimientoProfesor,p.numeroProfesor,p.correoProfesor,p.fotoProfesor,p.claveProfesor,p.estadoProfesor,e.nombreEstado");
+        $this->db->from("profesor p");
+        $this->db->join("estado e", "e.idEstado = p.estadoProfesor");
+        $this->db->where("idProfesor", $id);
+        */
     </script>
 </body>
 
